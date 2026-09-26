@@ -1,0 +1,36 @@
+# Dependencies (lockfile IS committed for reproducible installs)
+node_modules/
+
+# Build / typecheck output
+dist/
+build/
+*.tsbuildinfo
+
+# Test / coverage artifacts
+coverage/
+*.db
+*.db-journal
+niaverp-outbox-test.db
+
+# Env / secrets (dev trust only; never commit real credentials)
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Expo / native build output (regenerated via prebuild)
+apps/mobile/android/
+apps/mobile/ios/
+apps/mobile/.expo/
+.expo/
+
+# Logs / temp
+*.log
+*.out
+tmp/
+temp/

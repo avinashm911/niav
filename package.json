@@ -1,22 +1,27 @@
 {
-  "name": "@niaverp/mobile",
+  "name": "niaverp",
   "version": "0.1.0",
   "private": true,
-  "main": "App.tsx",
+  "description": "NiavERP — mobile-first offline-first Indian ERP (design docs + domain implementation catch-up, Phase 8)",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
-  },
-  "dependencies": {
-    "expo": "~57.0.0",
-    "expo-sqlite": "~16.0.0",
-    "expo-status-bar": "~3.0.0",
-    "react": "19.1.0",
-    "react-native": "0.81.4"
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/pg": "^8.23.1",
+    "better-sqlite3": "^13.0.3",
+    "eslint": "^10.11.0",
+    "pg": "^8.23.0",
+    "tsx": "^4.23.15",
     "typescript": "^5.6.3",
-    "@types/react": "~19.1.0"
+    "typescript-eslint": "^8.70.1",
+    "vitest": "^2.1.8"
   }
 }
