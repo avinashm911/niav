@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "NiavERP",
+    "slug": "niaverp",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "plugins": [],
+    "android": { "package": "com.niaverp.app" }
+  }
+}

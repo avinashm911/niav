@@ -1,0 +1,22 @@
+{
+  "name": "@niaverp/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "App.tsx",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "expo": "~57.0.0",
+    "expo-sqlite": "~16.0.0",
+    "expo-status-bar": "~3.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/react": "~19.1.0"
+  }
+}
